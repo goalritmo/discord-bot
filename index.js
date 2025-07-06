@@ -25,4 +25,15 @@ for (const file of eventFiles) {
   client.on(eventName, (...args) => event(client, ...args));
 }
 
+const sendRoleMessage = require("./commands/sendRoleMessage");
+
+client.once("ready", () => {
+  console.log(`Baymax activo como ${client.user.tag}`);
+
+  // ⚠️ Reemplazá con el ID del canal donde querés que se publique
+  const canalID = "1390810221563220019";
+
+  sendRoleMessage.execute(client, canalID);
+});
+
 client.login(process.env.DISCORD_TOKEN);

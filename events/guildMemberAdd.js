@@ -7,6 +7,6 @@ module.exports = async (client, member) => {
   if (!channel) return;
 
   channel.send(
-    `¡Hola ${member}, soy BayMaX! 🤖 Estoy aquí para asistirte. ¡Bienvenido/a al servidor! 🎉`
+    `¡Hola ${member}, soy Baymax! 🤖 Estoy aquí para asistirte. ¡Bienvenido/a al servidor! 🎉`
   );
 };
